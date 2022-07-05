@@ -1,0 +1,143 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Survey Form</title>
+	  <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h1 id="title">Product Survey Form</h1>
+    <p id="description">This form is used to get your opinion about our product so that we could use these information to update our product. We will sincerely appreciate your answer.</p>
+    <form id="survey-form" action="xxx.com">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <p>We will collect your personal information in this part,so that we can connect you and give you gifts once your opinion is accepted.</p>
+        <label id="name-label">Your Name is: <input id="name" type="text" placeholder="your real name" required/></label>
+        <label id="email-label">Your Email is: <input id="email" type="email" placeholder="email address" required/></label>
+        <label id="number-label">Your Age is: <input id="number" placeholder="1-150" type="number" min="1" max="150" /></label>
+        <label>Your Personality: 
+          <label><input type="radio" name="personality" value="1" class="inline"/> Reseacher</label>
+          <label><input type="radio" name="personality" value="2" class="inline"/> Student</label>
+          <label><input type="radio" name="personality" value="3" class="inline"/> Seller</label>
+          <label><input type="radio" name="personality" value="4" class="inline"/> Other</label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Reviews of our product</legend>
+        <label>How did you hear about us?
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="21">News</option>
+            <option value="22">Teachers</option>
+            <option value="23">Forum</option>
+            <option value="24">Friends</option>
+            <option value="25">Other</option>
+          </select>
+        </label>
+        <label>Which parts of our product do you like better?(You can choose more than one answer)
+          <label><input type="checkbox" value="31" class="inline"/> Interface Design</label>
+          <label><input type="checkbox" value="32" class="inline"/> Function Realization</label>
+          <label><input type="checkbox" value="33" class="inline"/> Results Show</label>
+        </label>
+        <label>What aspects of our products are you dissatisfied with?(You can choose more than one answer)
+          <label><input type="checkbox" value="41" class="inline"/> Interface Design</label>
+          <label><input type="checkbox" value="42" class="inline"/> Function Realization</label>
+          <label><input type="checkbox" value="43" class="inline"/> Results Show</label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Your advice</legend>
+        <textarea name="advice" rows="10" cols="50" placeholder="You can write your advice here or upload file with the button below it."></textarea>
+        <input type="file"/>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #1b1b32;
+	color: #f5f6f7;
+  font-family: Tahoma;
+	font-size: 16px;
+}
+
+h1 {
+  margin: 1em auto;
+  text-align: center;
+}
+
+p {
+  font-size: 10px;
+  text-align: center;
+  color: grey;
+}
+
+form {
+  width: 60vw;
+	max-width: 500px;
+	min-width: 300px;
+	margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border-color: 10px;
+	padding: 0.5rem 2rem;
+  margin: 10px auto;
+  background-color: rgba(255, 255, 255, 0.2); 
+}
+
+label {
+  display: block;
+	margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+	width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+
+** end of undefined **
+
